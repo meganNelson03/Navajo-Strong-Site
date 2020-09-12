@@ -1,64 +1,81 @@
 <%- include("./partials/header.ejs") -%>
 
 <!-- LANDING SECTION -->
-<section class="landing-section">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h1>Our Mission is to Help</h1>
+<section class="dark-section landing-section container-fluid">
+    <div class="landing-row row">
+        <div class="landing-text-container col-12 col-xl-6 order-xl-1 order-12">
+            <h1 class="landing-lead-header">Our Mission is to Help</h1>
             <p class="landing-lead-text">
                 What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
             </p>
-            <div class="row">
-                <div class="col-4">
-                    <button type="button" class="btn btn-md btn-primary"><a href="">Request Help</a></button>
+            <div class="row lead-button-container">
+                <div class="col-sm-4 col-12">
+                    <button type="button" class="btn btn-md btn-primary"><a href="">Get Help</a></button>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-12">
                     <button type="button" class="btn btn-md btn-primary"><a href="">Donate</a></button>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4 col-12">
                     <button type="button" class="btn btn-md btn-primary"><a href="">Volunteer</a></button>
                 </div>
             </div>   
         </div>
-        <div class="col-12 col-md-6">
-            <img src="../assets/imgs/navajo-strong-logo.png" alt="navajo strong logo" width="300" height="300">
+        <div class="landing-img-container col-12 col-xl-6 order-xl-12 order-1">
+            <img class="navajo-strong-logo-img" src="../assets/imgs/navajo-strong-logo.png" alt="navajo strong logo">
         </div>
     </div>
 </section>
 
 <!-- GET HELP SECTION -->
 
-<section class="get-help-section">
-    <div class="row">
+<section class="light-section get-help-section container-fluid">
+    <div class="get-help-row row">
         <div class="col-12 col-md-6">
-            <h2>In need of help? Request relief now. </h2>
-            <button type="button" class="request-relief-btn btn btn-lg btn-primary">Request COVID-19 Relief</button>
+            <h2 class="get-help-lead">In need of help? Request relief now. </h2>
+            <button type="button" class="dark-button request-relief-btn btn btn-md btn-primary">Request COVID-19 Relief</button>
         </div>
         <div class="col-12 col-md-6">
-            <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+            <p class="get-help-text">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <h3>Check out these Orgs</h3>
-            <p>Other groups may be able to help you faster than we can.</p>
-            <ul>
-                <li>Utah Help</li>
-                <li>Arizona Help</li>
-                <li>Dennehotso Community</li>
-            </ul>
+    <hr>
+    <div class="get-help-row row">
+        <div class="col-12 col-lg-6">
+            <div class="get-help-card">
+                <h3>Check out these Orgs</h3>
+                <hr>
+                <p>Other groups may be able to help you faster than we can.</p>
+                <ul>
+                <li>
+                    <h6><a href="https://www.wearenavajo.org/programs-services/COVID">Utah Help</a></h6>
+                    <p>Call Pete (435)-678-0709</p>
+                </li>
+                <li>
+                    <h6><a href="https://docs.google.com/forms/d/e/1FAIpQLScMcnYWc7ucAXYU9LGND99bpxBjYZGsSh3H-pUHZVybZwFpHg/viewformwww.navajohopisolidarity.org">Arizona Help</a></h6>
+                    <p>Navajo & Hopi Families COVID Help Request Form</p>
+                </li>
+                <li>
+                    <h6><a href="https://docs.google.com/forms/d/e/1FAIpQLSdduMY82CKxYIstxYSne_W1TFNFq_1A2d0FlSl6pQT_Lw3-bg/viewform?embedded=true&fbclid=IwAR2OmFIi3RHXeq4JMoZ_SygP67DvyWbo73FYmajskRrOMnSKRuqqDuKK_No">Dennehotso Community</a></h6>
+                    <p><em>We Are Navajo</em> provides elderly emergency supplies</p>
+                </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-12 col-md-6">
-            <h3>Reach out to your local chapter house</h3>
-            <p>Other groups may be able to help you faster than we can.</p>
-            <ul>
-                <li>Navajo Command Center Hotline: (928) 871-7014</li>
-                <li>HCOC Mental Health Helpline: (928) 810-7357</li>
-                <li>Email: coronavirus.infro@nndoh.org</li>
-                <li>Facebook: navaodepthealth</li>
-                <li>Instagram: navajonation_doh</li>
-                <li>Twitter: navajohealth</li>
-            </ul>
+       
+        <div class="col-12 col-lg-6">
+            <div class="get-help-card">
+                <h3>Reach out to your local chapter house</h3>
+                <hr>
+                <p>Other groups may be able to help you faster than we can.</p>
+                <ul class="get-help-card-list">
+                <li>Navajo Command Center Hotline: <span>(928) 871-7014</span></li>
+                <li>HCOC Mental Health Helpline: <span>(928) 810-7357</span></li>
+                <li>Email: <span>coronavirus.infro@nndoh.org</span></li>
+                <li>Facebook: <span>navaodepthealth</span></li>
+                <li>Instagram: <span>navajonation_doh</span></li>
+                <li>Twitter: <span>navajohealth</span></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -66,7 +83,7 @@
 
 <!-- DONATE SECTION -->
 
-<section class="donate-section">
+<section class="dark-section donate-section container-fluid">
     <div class="row">
         <div class="col-12">
             <h2>Please, donate today.</h2>
@@ -101,7 +118,7 @@
 
 <!-- VOLUNTEER SECTION -->
 
-<section class="volunteer-section">
+<section class="light-section volunteer-section container-fluid">
     <div class="row">
         <div class="col-12">
             <h2>Volunteer with NavajoStrong</h2>
@@ -112,7 +129,7 @@
             <p>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
         </div>
         <div class="col-12 col-md-6">
-            <button type="button" class="btn btn-lg btn-primary">
+            <button type="button" class="dark-button btn btn-lg btn-primary">
                 <a href="">Volunteer</a>
             </button>
         </div>   
@@ -121,7 +138,7 @@
 
 <!-- SOCIALS SECTION -->
 
-<section class="socials-section">
+<section class="dark-section socials-section container-fluid">
     <div class="row">
         <div class="col-12">
             <h2>Follow us on social media</h2>
@@ -143,7 +160,7 @@
 
 <!-- CONTACT US SECTION -->
 
-<section class="contact-section">
+<section class="light-section contact-section container-fluid">
     <div class="row">
         <div class="col-12">
             <h2>Contact Us</h2>
@@ -164,7 +181,7 @@
                 <textarea name="message"></textarea>
                 </label>
 
-                <button type="submit">Send</button>
+                <button class="dark-button btn btn-md btn-primary" type="submit">Send</button>
             </form>
         </div>
     </div>
