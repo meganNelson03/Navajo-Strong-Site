@@ -21,6 +21,15 @@ a:hover {
     color: #9e7a26;
 }
 
+i {
+   color: white;
+   margin: 2% 5% 0% 5%;
+}
+
+i:hover {
+    color: #EAB63C;
+}
+
 /*...... NAVBAR ...........*/
 
 #myNavbar {
@@ -77,6 +86,11 @@ a:hover {
     background-color: white;
 }
 
+.section-header-text {
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
 .btn a {
     color: white;
     text-decoration: none;
@@ -87,15 +101,39 @@ a:hover {
     
 }
 
+hr {
+    border: 2px solid #BED9E4;
+}
+
+.light-button {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.light-button:hover, .light-button:focus {
+    background-color: #EAB63C;
+    border: 2px solid white;
+}
+
 .dark-button {
     margin-bottom: 5%;
     background-color: #3A6375;
     font-size: 1.15rem;
-    border: 3px solid #eab63c;
+    border: 2px solid #BED9E4;
 }
 
 .dark-button:hover, .dark-button:active {
     background-color: #233c47
+}
+
+.first-card {
+    border-top: 3px solid #3A6375;
+}
+
+.second-card {
+    border-top: 3px solid #EAB63C;
 }
 
 
@@ -170,9 +208,6 @@ a:hover {
     box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
 }
 
-/* .get-help-card ul span {
-
-} */
 
 .get-help-card-list li {
     margin-bottom: 1.05%;
@@ -184,6 +219,123 @@ a:hover {
 
 .request-relief-btn {
     padding: 3%;
+}
+
+/***** DONATE SECTION ******/
+
+.donate-section span {
+    color: #EAB63C;
+}
+
+.section-header-text {
+    font-size: 3.5rem;
+    margin-bottom: 3%;
+}
+
+.donate-section-text {
+    /* margin-bottom: 5%; */
+    line-height: 2;
+}
+
+.donate-text {
+    margin-left: -15px
+}
+
+.donation-option-buttons .btn {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.donation-option-buttons .row {
+    text-align: center;
+}
+
+.donation-option-buttons p {
+    width: 80%;
+    
+}
+
+.donation-option-buttons .btn {
+    margin-bottom: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/**** VOLUNTEER SECTION ******/
+
+.volunteer-section .section-header-text {
+    text-align: center;
+}
+
+.volunteer-section .get-help-card {
+    text-align: center;
+    padding: 5%;
+    margin: 0 5% 10% 5%;
+}
+
+.volunteer-section hr {
+    width: 85%;
+    margin-bottom: 5%;
+}
+
+.volunteer-section .get-help-card p {
+    padding: 0 10%;
+}
+
+.volunteer-section .dark-button {
+    width: 50%;
+}
+
+/***** SOCIALS ******/
+
+.socials-section .section-header-text {
+    text-align: center;
+}
+
+.social-icon-container {
+    text-align: center;
+}
+
+/***** CONTACT US *****/
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section hr {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.contact-section .section-header-text {
+    text-align: center;
+}
+
+.contact-section p {
+    padding: 0 10%;
+}
+
+.form-container {
+   text-align: center;
+   
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-item {
+    display: block;
+    width: 100%;
+    background-color: #BED9E4;
+    border: 0;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+.form-item:focus, .form-item:active {
+    outline: 2px solid #3A6375;
 }
 
 /***** FOOTER ******/
@@ -218,6 +370,23 @@ a:hover {
     .get-help-card h3 {
         font-size: 1.25rem;
     }
+
+    .section-header-text {
+        text-align: center;
+    }
+
+    .donate-header-row {
+        justify-content: center;
+        margin-bottom: 6%;
+    }
+
+    .donation-option-buttons {
+        margin-top: 10%;
+    }
+
+    .get-help-section .button-container {
+        text-align: center;
+    }
 }
 
 
@@ -232,9 +401,7 @@ a:hover {
         width: 90%;
     }
 
-    /* .get-help-section {
-        padding-top: 15%;
-    } */
+   
 
     .get-help-section hr {
         margin-bottom: 10%;
@@ -243,12 +410,30 @@ a:hover {
 
 }
 
+@media (max-width: 768px ) {
+    .volunteer-section hr {
+        margin-bottom: 10%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
 @media (max-width: 575px) {
 
     .get-help-lead {
         font-size: 2rem;
         margin-bottom: 10%;
     }
+
+    
+
+    .section-header-text {
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+
 
     .get-help-text {
         margin-top: 10%;
@@ -273,12 +458,19 @@ a:hover {
         width: 70%;
     }
 
-    
+    .donation-option-buttons .btn {
+        margin-bottom: 7%;
+    }
 
     
 }
 
 @media (max-width: 400px) {
+
+    .section-header-text {
+        font-size: 2rem;
+    }
+
     .landing-lead-header {
         font-size: 2.5rem;
         margin-bottom: 8%;
