@@ -54,36 +54,7 @@ i:hover {
     background-color: white;
 }
 
-/*.... card styles .....*/
 
-.card {
-    border-radius: 5px;
-    width: 95%;
-    padding: 3%;
-    -webkit-box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
-    -moz-box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
-    box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
-}
-
-.card-list li {
-    margin-bottom: 2.05%;
-}
-
-.card h3 {
-    text-align: center;
-}
-
-.first-card {
-    border-top: 3px solid #3A6375;
-}
-
-.second-card {
-    border-top: 3px solid #EAB63C;
-}
-
-hr {
-    border: 2px solid #BED9E4;
-}
 
 /*.... button styles ....*/
 
@@ -113,13 +84,45 @@ hr {
     margin-bottom: 5%;
     background-color: #3A6375;
     font-size: 1.15rem;
-    border: 2px solid #BED9E4;
+    /* border: 2px solid #BED9E4; */
+    border: 0;
 }
 
 .dark-button:hover, .dark-button:active {
-    /* background-color: #233c47 */
     background-color: #762c2c;
-    border: 2px solid white;
+    border: 2px solid #BED9E4;
+    border: 0;
+}
+
+/*.... card styles .....*/
+
+.card {
+    border-radius: 5px;
+    width: 95%;
+    padding: 3%;
+    -webkit-box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
+    -moz-box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
+    box-shadow: 3px 4px 18px 0px rgba(163,163,163,1);
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card-list li {
+    margin-bottom: 2.05%;
+}
+
+.first-card {
+    border-top: 3px solid #3A6375;
+}
+
+.second-card {
+    border-top: 3px solid #EAB63C;
+}
+
+hr {
+    border: 2px solid #BED9E4;
 }
 
 /*..... text styles ......*/
@@ -324,6 +327,7 @@ hr {
 
 form {
     width: 50%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -334,9 +338,6 @@ form {
     border: 0;
     padding: 2%;
     margin-bottom: 3%;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
-    box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
 }
 
 .form-item:focus, .form-item:active {
@@ -355,6 +356,20 @@ form .dark-button {
     text-align: center;
 }
 
+/****** ABOUT PAGE ******/
+
+.about-content-container {
+    margin: 2% 0;
+}
+
+.about-section p {
+    width: 85%;
+    text-align: justify;
+}
+
+.who-container h1 {
+    margin-bottom: 5%;
+}
 
 
 /**** RESPONSIVE ******/
@@ -362,6 +377,7 @@ form .dark-button {
 @media (max-width: 1185px) {
     .landing-lead-header {
         text-align: center;
+        
         margin-bottom: 2%;
     }
 
@@ -405,6 +421,10 @@ form .dark-button {
     .get-help-section .button-container {
         text-align: center;
     }
+
+    form {
+        width: 95%;
+    }
 }
 
 
@@ -434,12 +454,18 @@ form .dark-button {
     }
 
     .section-text {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
-    form {
-        width: 80%;
+    .section-header-text {
+        padding-bottom: 5%;
     }
+
+    .about-section p {
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 575px) {
@@ -448,8 +474,6 @@ form .dark-button {
         font-size: 2rem;
         margin-bottom: 10%;
     }
-
-
 
     .section-header-text {
         font-size: 2.5rem;
@@ -478,7 +502,6 @@ form .dark-button {
     .donation-option-buttons .btn {
         margin-bottom: 7%;
     }
-
     
 }
 
@@ -496,8 +519,4 @@ form .dark-button {
     .fab {
        font-size: 2.5rem;
     }
-}
-
-@media (max-width: 300px) {
-   
 }
