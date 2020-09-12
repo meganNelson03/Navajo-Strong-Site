@@ -282,6 +282,10 @@ hr {
     margin-bottom: 5%;
 }
 
+.volunteer-section .col-md-6 {
+    margin-left: -15px;
+}
+
 .volunteer-section .card p {
     padding: 0 10%;
 }
