@@ -223,15 +223,40 @@ a:hover {
 
 @media (max-width: 900px ) {
 
+    .container-fluid {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
 
     .navajo-strong-logo-img {
         width: 90%;
+    }
+
+    /* .get-help-section {
+        padding-top: 15%;
+    } */
+
+    .get-help-section hr {
+        margin-bottom: 10%;
     }
 
 
 }
 
 @media (max-width: 575px) {
+
+    .get-help-lead {
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+
+    .get-help-text {
+        margin-top: 10%;
+    }
+
+    .get-help-card {
+        padding: 7%;
+    }
 
     #myNavbar {
        padding: 1% 5%;
@@ -247,6 +272,10 @@ a:hover {
         padding: 0;
         width: 70%;
     }
+
+    
+
+    
 }
 
 @media (max-width: 400px) {
