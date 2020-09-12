@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -62,7 +66,7 @@ i:hover {
 }
 
 .card-list li {
-    margin-bottom: 1.05%;
+    margin-bottom: 2.05%;
 }
 
 .card h3 {
@@ -113,7 +117,9 @@ hr {
 }
 
 .dark-button:hover, .dark-button:active {
-    background-color: #233c47
+    /* background-color: #233c47 */
+    background-color: #762c2c;
+    border: 2px solid white;
 }
 
 /*..... text styles ......*/
@@ -146,7 +152,9 @@ hr {
 }
 
 .navbar li {
+    letter-spacing: 2px;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -198,9 +206,6 @@ hr {
     margin: 2% 0 5% 0;
 }
 
-.get-help-row:first-of-type {
-    /* margin-bottom: 2%; */
-}
 
 .get-help-lead {
     font-size: 3rem;
@@ -329,10 +334,18 @@ form {
     border: 0;
     padding: 2%;
     margin-bottom: 3%;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
+    box-shadow: 0px 3px 8px 0px rgba(186,186,186,1);
 }
 
 .form-item:focus, .form-item:active {
-    outline: 2px solid #3A6375;
+    outline: 2px solid #99bfcf;
+}
+
+form .dark-button {
+    width: 50%;
+    margin-top: 2%;
 }
 
 /***** FOOTER ******/
@@ -381,6 +394,10 @@ form {
         margin-bottom: 6%;
     }
 
+    .donate-section p {
+        text-align: center;
+    }
+
     .donation-option-buttons {
         margin-top: 10%;
     }
@@ -416,7 +433,9 @@ form {
         margin-bottom: 10%;
     }
 
-
+    .section-text {
+        margin-top: 10%;
+    }
 
     form {
         width: 80%;
@@ -434,12 +453,7 @@ form {
 
     .section-header-text {
         font-size: 2.5rem;
-        margin-bottom: 5%;
-    }
-
-
-    .get-help-text {
-        margin-top: 10%;
+        margin: 0;
     }
 
     .card {
@@ -477,6 +491,10 @@ form {
     .landing-lead-header {
         font-size: 2.5rem;
         margin-bottom: 8%;
+    }
+
+    .fab {
+       font-size: 2.5rem;
     }
 }
 
