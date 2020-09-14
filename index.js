@@ -20,6 +20,10 @@ app.get("/about", (req, res) => {
     res.render("about");
 });
 
+app.get("/*", (req, res) => {
+    res.render("error");
+})
+
 
 app.listen(PORT, () => {
     console.log(`Listening at ${PORT}...`);
