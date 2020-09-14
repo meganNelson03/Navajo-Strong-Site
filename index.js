@@ -15,11 +15,11 @@ app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 //....ROUTES..........
 app.get("/", (req, res) => {
-    res.render("index", {FORMSPRING_ID: process.env.FORMSPRING_ID});
+    res.render("index", {FORMSPRING_ID: process.env.FORMSPRING_ID, GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID});
 });
 
 app.get("/about", (req, res) => {
-    res.render("about");
+    res.render("about", {GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID});
 });
 
 app.get("/*", (req, res) => {
