@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express"),
       bodyparser = require("body-parser"),
+      redirectToHTTPS = require("express-http-to-https").redirectToHTTPS;
       app = express();
 
 const PORT = process.env.PORT || 5000;
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.set("view engine", "ejs");
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 //....ROUTES..........
 app.get("/", (req, res) => {
