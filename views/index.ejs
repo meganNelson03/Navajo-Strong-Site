@@ -215,9 +215,9 @@
         <div class="col-12">
    
             <form action="https://formspree.io/<%= FORMSPRING_ID %>" method="POST">
-                <input class="form-item" type="text" placeholder="your name" name="your name">
-                <input class="form-item" type="text" placeholder="email" name="_replyto">
-                <textarea rows="5" class="form-item" name="message" placeholder="your thoughts..."></textarea>
+                <input class="form-item" type="text" placeholder="your name" name="your name" required>
+                <input class="form-item" type="text" placeholder="email" name="_replyto" required>
+                <textarea rows="5" class="form-item" name="message" placeholder="your thoughts..." required></textarea>
                 <button class="dark-button btn btn-md btn-primary" type="submit">Send</button>
             </form>
         </div>
