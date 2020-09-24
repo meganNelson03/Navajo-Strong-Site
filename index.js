@@ -22,6 +22,10 @@ app.get("/about", (req, res) => {
     res.render("about", {GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID});
 });
 
+app.get("/in-the-news", (req, res) => {
+    res.render("media", {GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID});
+})
+
 app.get("/*", (req, res) => {
     res.render("error");
 })
