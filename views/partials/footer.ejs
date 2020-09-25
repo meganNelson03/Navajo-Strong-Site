@@ -38,7 +38,9 @@
         }
       })
 
-      $('.grid').masonry({
+      document.onreadystatechange = function() {
+
+        $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
         resize: true,
@@ -51,7 +53,8 @@
           $grid.masonry("layout");
         }
       );
-})
+      })
+    }
 
     </script>
 
