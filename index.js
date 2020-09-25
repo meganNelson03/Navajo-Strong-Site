@@ -27,7 +27,7 @@ app.get("/in-the-news", (req, res) => {
 })
 
 app.get("/*", (req, res) => {
-    res.render("error");
+    res.render("error", {GOOGLE_TAG_ID: process.env.GOOGLE_TAG_ID});
 })
 
 

@@ -122,6 +122,7 @@ hr {
     margin-right: 10px;
     text-transform: uppercase;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #eab63c;
 }
@@ -277,8 +278,10 @@ form .dark-button {
 
 /* MEDIA PAGE */
 
-.media-section .col-md-3 {
-    padding: 1%;
+.media-section hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .media-section .card {
@@ -288,21 +291,79 @@ form .dark-button {
     -webkit-box-shadow: 3px 4px 9px 0 #dbdbdb;
     -moz-box-shadow: 3px 4px 9px 0 #dbdbdb;
     box-shadow: 3px 4px 9px 0 #dbdbdb;
+    margin-bottom: 2%;
+    transition: box-shadow 1s ease-in-out;
 }
 
-.media-section .media-content {
+.media-section .card:hover {
+    -webkit-box-shadow: 3px 4px 9px 0 #dbdbdb;
+    -moz-box-shadow: 3px 4px 9px 0 #dbdbdb;
+    box-shadow: 3px 4px 9px 0 #a3a3a3;
+}
+
+@keyframes lightup {
+    from {
+        -webkit-box-shadow: 3px 4px 9px 0 #dbdbdb;
+        -moz-box-shadow: 3px 4px 9px 0 #dbdbdb;
+        box-shadow: 3px 4px 9px 0 #dbdbdb;
+    }
+
+    to {
+        -webkit-box-shadow: 3px 4px 9px 0 #a3a3a3;
+        -moz-box-shadow: 3px 4px 9px 0 #a3a3a3;
+        box-shadow: 3px 4px 9px 0 #a3a3a3;
+    }
+}
+
+.media-section .card p, .media-section .card h3 {
     padding: 2%;
 }
 
 .news-img {
     width: 100%;
-    /* max-height: 200px; */
     margin-bottom: 8%;
     padding: 0;
     border-radius: 5px 5px 0px 0px;
 }
 
+.grid-item {
+    width: 25%;
+    padding: .5% 1% .5% 1%;
+    float: left;
+    text-align: justify;
+}
+
+.grid-sizer {
+    width: 25%;
+}
+
+.grid-item2 {
+    width: 50%;
+}
+
+.grid-item2 h1 {
+    text-align: center;
+}
+
+.grid-item2 .card {
+    padding: 3% 4% 2% 4%;
+    text-align: justify;
+}
+
+
+
+
 @media (max-width: 1185px) {
+
+    .media-section.container-fluid {
+        padding-top: 10%;
+    }
+
+
+    .grid-item2 {
+        width: 100%;
+    }
+
     .landing-lead-header {
         text-align: center;
         margin-bottom: 2%;
@@ -311,7 +372,29 @@ form .dark-button {
         text-align: center;
     }
 }
+
+@media (min-width: 991px) and (max-width: 1136px) {
+    .navbar li {
+        font-size: .9rem;
+        letter-spacing: 1px;
+        margin-right: 5px;
+    }
+}
+
 @media (max-width: 991px) {
+
+    .media-section.container-fluid {
+        padding-top: 15%;
+    }
+
+    .grid-item {
+        width: 50%;
+    }
+
+    .grid-item2 {
+        width: 100%;
+    }
+
     .card {
         padding-top: 5%;
         margin-bottom: 10%;
@@ -344,6 +427,15 @@ form .dark-button {
     }
 }
 @media (max-width: 900px) {
+
+    .grid-item {
+        width: 50%;
+    }
+
+    .grid-item2 {
+        width: 100%;
+    }
+
     .container-fluid {
         padding-top: 15%;
         padding-bottom: 15%;
@@ -356,6 +448,12 @@ form .dark-button {
     }
 }
 @media (max-width: 768px) {
+
+    .media-section.container-fluid {
+        padding-top: 20%;
+    }
+
+
     .volunteer-section hr {
         margin-bottom: 10%;
     }
@@ -370,6 +468,12 @@ form .dark-button {
     }
 }
 @media (max-width: 575px) {
+
+
+    .grid-item {
+        width: 100%;
+    }
+
     .get-help-lead {
         font-size: 2rem;
         margin-bottom: 10%;
