@@ -40,7 +40,7 @@
 
       document.onreadystatechange = function() {
 
-        $('.grid').masonry({
+        $(".grid").masonry({
         // options
         itemSelector: '.grid-item',
         resize: true,
@@ -48,6 +48,7 @@
       });
 
       $(window).on("load", function() {
+        console.log("loaded!");
         $grid.imagesLoaded().progress(
         function() {
           $grid.masonry("layout");
